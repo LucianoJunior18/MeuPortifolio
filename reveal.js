@@ -1,4 +1,11 @@
 let navBar = document.querySelector("#header");
+let menuIcon = document.querySelector("#menu-icon");
+let navBarMenu = document.querySelector("header nav");
+
+menuIcon.addEventListener("click", () => {
+  menuIcon.classList.toggle("bx-x");
+  navBarMenu.classList.toggle("active");
+});
 
 document.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
