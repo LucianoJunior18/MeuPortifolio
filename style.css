@@ -90,6 +90,27 @@ nav a.ative {
   display: none;
 }
 
+#menu-icon:hover {
+  color: #ffd900;
+}
+
+nav.active {
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(10px);
+  top: 9%;
+  height: 100vh;
+  animation: appearField 1s;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7.5rem;
+  align-items: center;
+  animation: fade 1s;
+}
+
 /* header dinamico */
 header.rolar .logo {
   color: var(--main-color);
@@ -866,75 +887,128 @@ section.projetos .flex {
   section.sobre .img-sobre img {
     width: 350px;
   }
-
-  /* projetos */
 }
 
 @media screen and (max-width: 580px) {
   .home {
-    gap: 5rem;
-    padding: 10rem 4%;
+    gap: 1rem;
+    padding: 11rem 4%;
+    flex-direction: column-reverse;
+  }
+
+  .home-detail h1 {
+    font-size: 4.2rem;
   }
 
   .home-detail h2 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 
   .home-detail .btn-sci {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 5.5rem;
   }
 
   .btn {
     padding: 1rem 2rem;
   }
 
-  .home-detail .btn-sci .sci a,
-  .btn-social a {
-    font-size: 3.5rem;
-    margin: 0 1rem;
+  .home-img .img-box {
+    width: 75vw;
+    height: 75vw;
+    margin: auto;
+    padding: 2rem;
   }
 
-  .home-img {
-    margin: 0 0 0 0;
-  }
-  .home-img .img-box {
-    width: 85vw;
-    height: 75vw;
+  .home-img .img-box::before,
+  .home-img .img-box::after {
+    width: 80rem;
+    height: 28rem;
   }
 
   /* especialidades */
-  section.especialidades {
-    margin: 1px 0 5px auto;
-    box-shadow: 0 0 20px 1px var(--main-color);
-    align-items: center;
-    justify-content: center;
-  }
 
   .interface .flex {
     display: flex;
-    flex-direction: column; /* Alinha as caixas na vertical */
-    align-items: center; /* Centraliza horizontalmente */
-    gap: 20px; /* Espaçamento entre as caixas */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 15px;
   }
 
   .especialidades .especialidades-box {
-    width: 50vw;
-  }
-
-  .especialidades .especialidades-box a {
-    font-size: 110px;
-    text-align: center;
+    width: 40vw;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: var(--second-bg-color);
   }
 
   .especialidades .interface .titulo {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .especialidades .especialidades-box a {
+    font-size: 10rem;
+    color: var(--main-color);
+    margin: 1rem;
   }
 
-  .especialidades .especialidades-box h3 {
-    font-size: 2.5rem;
-    margin: 35px 0;
+  /* ESTILO DO SOBRE */
+
+  section.sobre {
+    padding: 2rem;
+  }
+
+  section.sobre .img-sobre img {
+    max-width: 300px;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 2.8rem;
+    line-height: 35px;
+  }
+
+  .sobre .txt-sobre p {
+    font-size: 1.6rem;
     text-align: center;
+  }
+
+  /* projetos */
+  section.projetos {
+    margin: 50px auto;
+    box-shadow: 0 0 20px 1px var(--main-color);
+  }
+
+  section.projetos .flex {
+    gap: 8rem;
+  }
+
+  .img-proje {
+    width: 360px;
+    height: 360px;
+  }
+
+  .overlay .overlay-txt {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overlay .overlay-txt h2 {
+    font-size: 4rem;
+  }
+
+  .overlay .overlay-txt h3 {
+    font-size: 2rem;
+  }
+
+  /* footer */
+  footer {
+    padding: 4px 5%;
   }
 }
