@@ -599,7 +599,7 @@ footer .line-footer p a {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1236px) {
   /* home */
   header {
     padding: 2rem 4%;
@@ -886,6 +886,38 @@ section.projetos .flex {
 
   section.sobre .img-sobre img {
     width: 350px;
+  }
+
+  /* projetos */
+  section.projetos {
+    margin: 50px auto;
+    box-shadow: 0 0 20px 1px var(--main-color);
+  }
+
+  section.projetos .flex {
+    gap: 8rem;
+  }
+
+  .img-proje {
+    width: 360px;
+    height: 360px;
+  }
+
+  .overlay .overlay-txt {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overlay .overlay-txt h2 {
+    font-size: 4rem;
+  }
+
+  .overlay .overlay-txt h3 {
+    font-size: 2rem;
   }
 }
 
