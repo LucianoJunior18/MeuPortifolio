@@ -1,0 +1,322 @@
+@media screen and (max-width: 1670px) {
+  .home {
+    display: flex;
+    padding: 18rem 4% 5%;
+  }
+
+  .home-img .img-box {
+    width: 40vw;
+    height: 35vw;
+    margin: 20px 0px 0 20px;
+  }
+
+  section.projetos .img-proje {
+    width: 180px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width: 1236px) {
+  /* home */
+  header {
+    padding: 3rem 4%;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    padding: 15rem 4% 5%;
+  }
+
+  .home-detail .btn-sci .sci a,
+  .btn-social a {
+    font-size: 4rem;
+  }
+
+  .home-img .img-box {
+    width: 55vw;
+    height: 55vw;
+  }
+
+  /* skill */
+  section.especialidades {
+    padding: 5rem 3% 3rem;
+    margin: 0 0 50px auto;
+    align-items: center;
+  }
+
+  .especialidades .especialidades-box {
+    text-align: center;
+    margin: auto 0.2rem;
+  }
+
+  .especialidades .especialidades-box a {
+    font-size: 130px;
+  }
+
+  /* ESTILO DO SOBRE */
+  section.sobre .img-sobre img {
+    width: 300px;
+  }
+}
+
+/* projetos */
+section.projetos .img-proje {
+  width: 130px;
+  height: 300px;
+}
+
+.overlay .overlay-txt h2 {
+  font-size: 1.6rem;
+}
+
+.overlay .overlay-txt h3 {
+  font-size: 1.3rem;
+}
+
+.overlay p {
+  font-size: 1.1rem;
+  word-spacing: -1px;
+}
+
+@media screen and (max-width: 835px) {
+  body,
+  html {
+    overflow-x: hidden; /* Impedir overflow */
+  }
+
+  section {
+    box-sizing: border-box;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  nav {
+    left: 0;
+    text-align: center;
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav a {
+    display: block;
+    margin: 4rem 0;
+  }
+
+  /* home */
+  .home {
+    padding: 10rem 4% 3%;
+  }
+
+  .home-detail .btn-sci .sci a,
+  .btn-social a {
+    padding: 0.8rem;
+    font-size: 3rem;
+  }
+
+  .home-img .img-box {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .home-img .img-box::after {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* skill */
+  .especialidades .especialidades-box h3 {
+    font-size: 1.6em;
+  }
+  /* ESTILO DO SOBRE */
+  section.sobre .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+
+  section.sobre .img-sobre img {
+    width: 350px;
+  }
+
+  /* projetos */
+
+  section.projetos .img-proje {
+    width: 280px;
+    height: 250px;
+  }
+
+  section.projetos .flex {
+    gap: 3rem;
+  }
+
+  .overlay .overlay-txt {
+    padding: 1dvh;
+  }
+
+  .overlay .overlay-txt h2 {
+    font-size: 2.5rem;
+  }
+
+  .overlay .overlay-txt h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .home {
+    gap: 1rem;
+    padding: 11rem 4%;
+    flex-direction: column-reverse;
+  }
+
+  .home-detail h1 {
+    font-size: 4.2rem;
+  }
+
+  .home .home-detail h2 {
+    margin: 0;
+  }
+
+  .home-detail h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+
+  .home-detail .btn-sci {
+    display: flex;
+    flex-direction: column;
+    gap: 5.5rem;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+
+  /* especialidades */
+
+  .interface .flex {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .especialidades .especialidades-box {
+    width: 40vw;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    background-color: var(--second-bg-color);
+  }
+
+  .especialidades .interface .titulo {
+    margin-bottom: 5px;
+  }
+  .especialidades .especialidades-box a {
+    color: var(--main-color);
+  }
+
+  /* ESTILO DO SOBRE */
+
+  section.sobre {
+    padding: 2rem;
+  }
+
+  section.sobre .img-sobre img {
+    max-width: 300px;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 2.8rem;
+  }
+
+  .sobre .txt-sobre p {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  /* projetos */
+
+  section.projetos .img-proje {
+    width: 280px;
+    height: 380px;
+  }
+
+  section.projetos .flex {
+    gap: 8rem;
+  }
+
+  .img-proje {
+    width: 360px;
+    height: 360px;
+  }
+
+  .overlay .overlay-txt h2 {
+    font-size: 4rem;
+  }
+
+  .overlay .overlay-txt h3 {
+    font-size: 2rem;
+  }
+
+  /* footer */
+  footer {
+    padding: 4px 5%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  nav a {
+    margin: 30px 0;
+    font-size: 1.6rem;
+  }
+
+  nav.active img {
+    display: inline;
+    width: 120px;
+  }
+
+  /* home */
+
+  .home-img {
+    margin: 0;
+  }
+
+  .home-img .img-box {
+    margin: 0 0 0 20px;
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .home-detail h1 {
+    font-size: 3.9rem;
+  }
+
+  .home-detail h2 {
+    font-size: 2.9rem;
+  }
+
+  /* ESTILO DO SOBRE */
+
+  section.sobre {
+    padding: 0rem;
+  }
+
+  section.sobre .img-sobre img {
+    max-width: 280px;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    padding: 4px 1%;
+  }
+}
