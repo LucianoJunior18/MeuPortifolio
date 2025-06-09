@@ -88,6 +88,7 @@ nav a.ative {
 #menu-icon {
   font-size: 4rem;
   display: none;
+  z-index: 99999;
 }
 
 #menu-icon:hover {
@@ -100,7 +101,7 @@ nav.active {
   z-index: 200;
   background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(10px);
-  top: 9%;
+  top: 1%;
   height: 100vh;
   animation: appearField 1s;
   font-family: "Poppins", sans-serif;
@@ -109,6 +110,10 @@ nav.active {
   padding-top: 7.5rem;
   align-items: center;
   animation: fade 1s;
+}
+
+nav.active img {
+  width: 120px;
 }
 
 /* header dinamico */
