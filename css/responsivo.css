@@ -14,6 +14,14 @@
     width: 180px;
     height: 360px;
   }
+
+  /* projetos */
+  section.projetos .img-proje {
+    display: flex;
+    width: 220px;
+    height: 300px;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 1236px) {
@@ -62,7 +70,7 @@
 
 /* projetos */
 section.projetos .img-proje {
-  width: 130px;
+  width: 220px;
   height: 300px;
 }
 
@@ -149,12 +157,12 @@ section.projetos .img-proje {
   /* projetos */
 
   section.projetos .img-proje {
-    width: 280px;
-    height: 250px;
+    width: 500px;
+    height: 220px;
   }
 
   section.projetos .flex {
-    gap: 3rem;
+    gap: 1rem;
   }
 
   .overlay .overlay-txt {
