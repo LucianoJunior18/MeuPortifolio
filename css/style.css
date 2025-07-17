@@ -159,7 +159,7 @@ section {
   font-size: clamp(
     4.5rem,
     10vw,
-    7.5rem
+    7rem
   ); /*garante o tamanho da fonte responsivo*/
   font-family: "Permanent Marker", serif;
   font-weight: 400;
