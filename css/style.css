@@ -486,6 +486,10 @@ section.projetos .img-proje {
   word-spacing: -1px;
 }
 
+.spanh3{
+  color: white;
+}
+
 /* ESTILO O FORMULARIO DE CONTATO */
 section.formulario {
   padding: 10rem 4%;
